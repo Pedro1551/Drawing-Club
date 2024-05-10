@@ -1,0 +1,106 @@
+
+<html>
+<head>
+    <link href="css.css" rel="stylesheet">
+<meta charset="UTF-8"/>
+    <title>Drawing Club</title>
+</head>
+
+<body>
+<header class="topo">
+    <img class="Logo" src="Drawing Club.png" title="Logo">
+    
+    <main class="container">
+
+    <section>
+
+    <h1 class="encomendas"></h1>
+ <p class="txt1">Encomendas</p>
+</header>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Produto</th>
+                <th>Encomenda</th>
+                <th>Valor Unitário</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody id="tabela-clientes">
+
+        <tr class="cliente">
+            <td class="info-nome">Wesley</td>
+            <td class="info-produto">Caricatura Keanu Reeves</td>
+            <td class="info-qtde">1</td>
+            <td class="info-valor">500.00</td>
+            <td class="info-total">-</td>
+        </tr>   
+        <tr class="cliente">
+            <td class="info-nome">Milano</td>
+            <td class="info-produto">Scorpion Realista</td>
+            <td class="info-qtde">90</td>
+            <td class="info-valor">300.00</td>
+            <td class="info-total">-</td>
+        </tr>   
+        <tr class="cliente">
+            <td class="info-nome">Otávio</td>
+            <td class="info-produto">Desenho Cartoon</td>
+            <td class="info-qtde">10</td>
+            <td class="info-valor">100.00</td>
+            <td class="info-total">-</td>
+        </tr>   
+        <tr class="cliente">
+            <td class="info-nome">Pedro</td>
+            <td class="info-produto">Boneco de Palito</td>
+            <td class="info-qtde">PPP</td>
+            <td class="info-valor">100.00</td>
+            <td class="info-total">-</td>
+        </tr>   
+    </tbody>
+
+    </table>
+
+    <p class="txt1" id="titulo-form">Adicionar a nova encomenda</p>
+    <ul id="mensagens-erro"></ul>
+    <form id="form-adiciona">
+
+    <label for="nome" class="p1">Nome:</label>
+						<input type="text" id="nome" name="nome" placeholder="Digite o nome do(a) cliente" class="campo" required class>
+					</div>
+					<div class="grupo">
+						<label for="qtde" class="p1">Qtde:</label>
+						<input type="number" id="qtde" name="qtde" placeholder="Digite a quantidade encomendada" class="campo campo-medio" required>
+					</div>
+                    <div class="grupo">
+						<label for="produto" class="p1">Produto:</label>
+						<select id="produto" name="produto" class="campo campo-medio">
+							<option value="">Selecione</option>
+							<option>Caricatura Keanu Reeves</option>
+							<option>Scorpion Realista</option>
+							<option>Desenho Cartoon</option>
+							<option>Boneco de Palito</option>
+						</select>
+					</div>
+					<div class="grupo">
+
+                        <label for="unitario" class="p1">R$ Unitário:</label>
+						<input type="number" id="unitario" name="unitario" placeholder="Digite o valor unitário do produto" class="campo campo-medio" required>
+					</div>
+				
+					<input type="submit" id="adicionar-encomenda" class="bto-principal">
+				</form>
+			</section>
+
+        </main>
+
+
+
+<script src="CalculaTotal.js"></script>
+<script src="AddEncomenda.js"></script>
+<script src="removEncomenda.js"></script>
+
+</body>
+
+</html>

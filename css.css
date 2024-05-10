@@ -1,0 +1,68 @@
+body{
+
+    font-family: "Arial";
+
+    margin: 0;
+
+    padding: 0;
+
+    border: 0;
+
+}
+
+p {
+    text-align: center;
+    margin: 2em;
+}
+
+.Logo{
+
+    width: 15%;
+}
+
+.cliente{
+
+    color: green;
+    background-color: black;
+
+
+}
+
+
+html{
+
+    background-color:azure;
+}
+
+.txt1{
+    color: black;
+    text-align:justify;
+    font-size:larger;
+    font-weight: bold;
+}
+
+.p1{
+
+
+    display: flex;
+}
+
+
+/* Esconde o texto original e define o estilo do botão */
+.bto-principal {
+    position: relative;
+    overflow: hidden;
+    width: 200px; /* Defina a largura desejada */
+    height: 40px; /* Defina a altura desejada */
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: -97px; /* Ajuste o valor conforme necessário */
+    margin-left: 250px; /* Ajuste o valor conforme necessário */
+  }
+  
+  
+  
+
